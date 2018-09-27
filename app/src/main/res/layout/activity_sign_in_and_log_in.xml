@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e41e88"
+    tools:context=".SignInAndLogIn">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <android.support.design.widget.AppBarLayout
+
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:fitsSystemWindows="true">
+
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="#ffffff"
+                    app:expandedTitleTextAppearance="@android:color/white"
+                    android:background="#e41e88">
+
+
+
+
+                    <TextView
+
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_collapseMode="parallax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="#0000AB"
+                        android:text="Education Online Exam"
+                        />
+
+
+
+
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="#0e0d0e"
+                    android:background="#e41e88"
+                    app:expandedTitleTextAppearance="@android:color/transparent">
+
+
+
+
+                    <ImageView
+                        android:id="@+id/img_food1"
+android:layout_gravity="center"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="null"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/onlinetest"
+
+                        app:layout_collapseMode="parallax"
+                        />
+
+
+
+
+
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <!--<ScrollView-->
+            <!--android:id="@+id/nestedScrollView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clipToPadding="false"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+            <LinearLayout
+                android:layout_marginTop="250dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btnSignIn"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:text="Sign In Using Google"
+                        android:textColor="@color/colorPrimaryDark"
+                        app:buttonColor="@color/btnactive" />
+
+
+                    <!--<com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:id="@+id/number_button"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:layout_marginBottom="18dp"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--app:textSize="8dp"-->
+                    <!--app:backGroundColor="@color/colorAccent"-->
+                    <!--app:initialNumber="1"-->
+                    <!--app:finalNumber="20"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>-->
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="362dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="8dp"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="-15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/horizontalline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="OR" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="8dp"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginRight="-15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/horizontalline" />
+
+                </LinearLayout>
+                <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--&gt;-->
+
+                    <!--<EditText-->
+                        <!--android:layout_width="350dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:id="@+id/txtemail"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:drawablePadding="10dp"-->
+                        <!--android:drawableLeft="@drawable/ic_email_black_24dp"-->
+                        <!--android:inputType="textEmailAddress"-->
+                        <!--android:hint="Enter User Email"-->
+                        <!--android:textColorHint="#cccccc"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:layout_below="@+id/textView3"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="35dp"-->
+                        <!--android:layout_gravity="center"/>-->
+
+
+                    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                    <!--&lt;!&ndash;&ndash;&gt;-->
+                    <!--&lt;!&ndash;&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/login_emailid"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="20dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="@android:color/transparent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:drawableLeft="@drawable/ic_email_black_24dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:drawablePadding="8dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:hint="@string/email"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:inputType="textEmailAddress"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:padding="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColorHint="@color/white"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="16sp" />&ndash;&gt;-->
+
+
+                    <!--<EditText-->
+                        <!--android:layout_width="350dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:id="@+id/txtpassword"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:drawablePadding="10dp"-->
+
+                        <!--android:drawableLeft="@drawable/ic_vpn_key_black_24dp"-->
+                        <!--android:inputType="textPassword"-->
+                        <!--android:hint="Enter User Password"-->
+                        <!--android:textColorHint="#cccccc"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:textSize="20sp"-->
+
+                        <!--android:layout_below="@+id/textView3"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="47dp"-->
+                        <!--android:layout_gravity="center">-->
+
+                    <!--</EditText>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="362dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:paddingBottom="5dp"-->
+                        <!--android:paddingTop="8dp" >-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/show_hide_password"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="30dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="Show Password"-->
+                            <!--android:textColor="@color/black"-->
+                            <!--android:textSize="14sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/forgot_password"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="end"-->
+
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Forgot Password"-->
+                            <!--android:textColor="@color/black"-->
+                            <!--android:textSize="14sp" />-->
+                    <!--</LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btnLogIn"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:text="Log In"
+                        android:textColor="@color/colorPrimaryDark"
+                        app:buttonColor="@color/loginbtnactive"
+                        android:layout_marginBottom="40dp"/>
+
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:text="Sign Up"
+                        android:textColor="@color/colorPrimaryDark"
+                        app:buttonColor="@color/btnactive"
+                        android:layout_marginBottom="30dp"/>
+                </LinearLayout>
+
+
+
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+
+            <!--</ScrollView>-->
+        </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
